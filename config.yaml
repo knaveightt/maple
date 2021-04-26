@@ -1,0 +1,5 @@
+project-path: "/home/knaveightt/Documents/global/projects.yaml"
+default-command: "echo -e \"Ok\" | rofi -dmenu -i -p \"Nothing To Launch\""
+autorun:
+  - project: "TotalKnavery"
+    command: "emacs -f project-open-totalknavery"

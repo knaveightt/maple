@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /home/knaveightt/Prog/knv-project/
+projects=$(python project-parse.py --projects)
+project=$(echo "$projects" | rofi -dmenu -i -p "Open a project: ")
+execute=$(python project-parse.py --autorun "$project")
+eval $execute
